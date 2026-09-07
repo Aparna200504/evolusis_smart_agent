@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class LLMService:
     def __init__(self):
         self.api_key = config.GEMINI_API_KEY
-        self.model = "gemini-2.0-flash-exp"  # Use the exact model from your working curl
+        self.model = "gemini-2.0-flash-exp" 
         self.base_url = "https://generativelanguage.googleapis.com/v1beta/models"
     
     def _is_llm_available(self):
