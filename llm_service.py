@@ -19,7 +19,7 @@ class LLMService:
     async def decide_action(self, query: str, memory_context: str = "") -> dict:
         """
         Use LLM to decide whether to:
-        - Answer directly using LLM, OR
+        - Answer directly using LLM,
         - Call external API for factual data
         """
         try:
